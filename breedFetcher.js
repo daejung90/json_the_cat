@@ -7,7 +7,7 @@ request('https://api.thecatapi.com/v1/breeds/search?q=' + argv, (error, response
   const data = JSON.parse(body);
     
   if (error) {
-    console.log(error, null);
+    console.log(error);
   }
     
   if (data[0]) {
